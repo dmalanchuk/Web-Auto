@@ -1,3 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*header*/
+
+.header, .header-universal, .header-sedan, .header-hatchback, .header-universal, .header-cupe, .header-crossover {
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100% 100%;
+
+    perspective: 1px;
+
+    /*створюємо еффект глубіни*/
+    transform-style: preserve-3d;
+
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /*Скидаємо падінги для ширини*/
+    box-sizing: border-box;
+
+}
+.header-hatchback::before, .header-sedan::before,.header::before, .header-universal::before, .header-cupe::before, .header-crossover::before{
+    content: '';
+
+    position: absolute;
+    display: block;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+
+    transform-origin: center;
+    transition: 1s;
+
+    background-size: cover;
+
+    /*паралакс ефект*/
+    transform: translateZ(-1px) scale(2);
+}
+
+.header-hatchback::before{
+    background-image: url("../NewImg/HatchBackImage.webp");
+}
+.header::before {
+    background-image: url("../NewImg/MainImage.jpg");
+}
+.header-crossover::before{
+    background-image: url("../NewImg/CrossoverImage.jpg");
+}
+.header-cupe::before{
+    /*background-image: url("../NewImg/CupeImages.jpg");*/
+}
+.header-universal::before {
+    background-image: url("../NewImg/UniversalImage.jpg");
+}
+.header-sedan::before{
+    background-image: url("../NewImg/sedanImage.webp");
+}
+
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -5,18 +78,28 @@
 
 
 .navbar {
+    position: relative;
+
     width: 800px;
     margin: 0 auto;
+    background: gray;
+
+    z-index: 1;
 }
 
 .navigation {
-    height: 100px;
+    height: 40px;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
+    padding: 0;
+    margin: 0;
+
+
     list-style: none;
+
 }
 
 .navigation a {
@@ -32,10 +115,11 @@
 
     border: gray 1px solid;
     border-radius: 5px;
+    background: transparent;
 
     transition: background-color 0.5s;
 }
 
 .button:hover {
-    background: gray;
+    background: blueviolet;
 }
