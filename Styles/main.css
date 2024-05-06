@@ -9,68 +9,6 @@ body {
     font-style: normal;
 }
 
-/*header*/
-
-.header, .header-universal, .header-sedan, .header-hatchback, .header-universal, .header-cupe, .header-crossover {
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-size: 100% 100%;
-
-    perspective: 1px;
-
-    /*створюємо еффект глубіни*/
-    transform-style: preserve-3d;
-
-
-    overflow-y: scroll;
-    overflow-x: hidden;
-
-    /*Скидаємо падінги для ширини*/
-    box-sizing: border-box;
-
-}
-.header-hatchback::before, .header-sedan::before,.header::before, .header-universal::before, .header-cupe::before, .header-crossover::before{
-    content: '';
-
-    position: absolute;
-    display: block;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    z-index: -1;
-
-    transform-origin: center;
-    transition: 1s;
-
-    background-size: cover;
-
-    /*паралакс ефект*/
-    transform: translateZ(-1px) scale(2);
-}
-
-.header-hatchback::before{
-    background-image: url("../NewImg/HatchBackImage.webp");
-}
-.header::before {
-    background-image: url("../NewImg/MainImage.jpg");
-}
-.header-crossover::before{
-    background-image: url("../NewImg/CrossoverImage.jpg");
-}
-.header-cupe::before{
-    /*background-image: url("../NewImg/CupeImages.jpg");*/
-}
-.header-universal::before {
-    background-image: url("../NewImg/UniversalImage.jpg");
-}
-.header-sedan::before{
-    background-image: url("../NewImg/sedanImage.webp");
-}
-
-
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -80,15 +18,19 @@ body {
 .navbar {
     position: relative;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     width: 800px;
     margin: 0 auto;
-    background: gray;
 
     z-index: 1;
 }
 
 .navigation {
     height: 40px;
+    width: 600px;
 
     display: flex;
     justify-content: space-around;
@@ -102,6 +44,11 @@ body {
 
 }
 
+.logotype {
+    height: 50px;
+    width: 50px;
+}
+
 .navigation a {
     text-decoration: none;
     cursor: pointer;
@@ -112,14 +59,93 @@ body {
 
 
 .button {
-
-    border: gray 1px solid;
-    border-radius: 5px;
+    border: none;
     background: transparent;
 
-    transition: background-color 0.5s;
 }
 
 .button:hover {
-    background: blueviolet;
+    border-bottom: 1px gray solid;
 }
+
+/*====================================================*/
+
+.NameCar {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+
+    font-size: 250px;
+}
+
+.Block {
+    position: absolute;
+
+    min-height: 100vh;
+    width: 300px;
+
+    left: 70vw;
+
+    background: yellow;
+
+    z-index: -3;
+}
+
+
+.backgroundText {
+    position: absolute;
+
+    width: 1200px;
+    text-align: center;
+    top: -15%;
+
+    z-index: -2;
+}
+
+.CommonImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nameInfo {
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+
+    top: 85vh;
+}
+
+.SectionHeader, .SectionMain .SectionFooter {
+    min-height: 100vh;
+}
+
+
+.nameInfo h3, h5 {
+    margin: 0;
+}
+
+.nameInfo h5 {
+    color: #acacac;
+}
+
+.table, .tableName {
+    width: 300px;
+}
+
+.table thead td {
+    color: #acacac;
+}
+
+.table tbody td {
+    font-size: 25px;
+}
+
+.tableName tbody td {
+    color: #acacac;
+    font-size: 25px;
+}
+
+
+/*============================================*/
