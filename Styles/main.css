@@ -1,13 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body {
+* {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vh + 1vw);
+    --transition: 1s cubic-bezier(.05, .5, 0, 1);
+}
+
+body {
+    background: #000;
+    color: white;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+/* Паралакс єфект та стилізація слоїв для нього */
+
+.layers {
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.layers__container {
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    will-change: transform;  /*оптимізація*/
+    transition: transform var(--transition);
+}
+
+.layers__items {
+    position: absolute;
+
+   inset: -5vw;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer1 {
+    transform: translateZ(-30px) scale(1.06);
+}
+.layer2 {
+    transform: translateZ(80px) scale(.8);
+}
+.layer3 {
+    transform: translateZ(180px) scale(.8);
+}
+.layer4 {
+    transform: translateZ(190px) scale(.8);
+}
+.layer5 {
+    transform: translateZ(300px) scale(.8);
+}
+
+.header-main-text {
+    font-size: calc(var(--index) * .9);
+    text-align: center;
+}
+ .layer4, .layer5 {
+    pointer-events: none;
+
+}
+
+/* Кінець стилізації паралаксу */
 
 .container {
     max-width: 1280px;
@@ -117,12 +184,14 @@ body {
     top: 85vh;
 }
 
-.SectionHeader, .SectionMain .SectionFooter {
+.SectionHeader,
+.SectionMain .SectionFooter {
     min-height: 100vh;
 }
 
 
-.nameInfo h3, h5 {
+.nameInfo h3,
+h5 {
     margin: 0;
 }
 
@@ -130,7 +199,8 @@ body {
     color: #acacac;
 }
 
-.table, .tableName {
+.table,
+.tableName {
     width: 300px;
 }
 
