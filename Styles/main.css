@@ -13,12 +13,12 @@
 }
 
 body {
-    background: #000;
-    color: white;
-
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    color: white;
+    background: #000;
 }
 
 /* Паралакс єфект та стилізація слоїв для нього */
@@ -26,20 +26,23 @@ body {
 .layers {
     perspective: 1000px;
     overflow: hidden;
+
+    color: white;
 }
 
 .layers__container {
     height: 100vh;
     transform-style: preserve-3d;
     transform: rotateX(var(--move-y)) rotateY(var(--move-x));
-    will-change: transform;  /*оптимізація*/
+    will-change: transform;
+    /*оптимізація*/
     transition: transform var(--transition);
 }
 
 .layers__items {
     position: absolute;
 
-   inset: -5vw;
+    inset: -5vw;
 
     background-size: cover;
     background-position: center;
@@ -52,15 +55,19 @@ body {
 .layer1 {
     transform: translateZ(-30px) scale(1.06);
 }
+
 .layer2 {
     transform: translateZ(80px) scale(.8);
 }
+
 .layer3 {
     transform: translateZ(180px) scale(.8);
 }
+
 .layer4 {
     transform: translateZ(190px) scale(.8);
 }
+
 .layer5 {
     transform: translateZ(300px) scale(.8);
 }
@@ -68,8 +75,12 @@ body {
 .header-main-text {
     font-size: calc(var(--index) * .9);
     text-align: center;
+
+    width: 900px;
 }
- .layer4, .layer5 {
+
+.layer4,
+.layer5 {
     pointer-events: none;
 
 }
@@ -83,17 +94,16 @@ body {
 
 
 .navbar {
-    position: relative;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 800px;
-    margin: 0 auto;
+    color: white;
 
     z-index: 1;
 }
+  
 
 .navigation {
     height: 40px;
@@ -111,17 +121,10 @@ body {
 
 }
 
-.logotype {
-    height: 50px;
-    width: 50px;
-}
-
 .navigation a {
     text-decoration: none;
     cursor: pointer;
-    color: black;
-
-
+    color: white;
 }
 
 
@@ -135,7 +138,7 @@ body {
     border-bottom: 1px gray solid;
 }
 
-/*====================================================*/
+/* ====================================================
 
 .NameCar {
     -webkit-text-fill-color: transparent;
@@ -218,4 +221,14 @@ h5 {
 }
 
 
-/*============================================*/
+============================================ */
+
+
+.main {
+    min-height: 100vh;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
