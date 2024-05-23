@@ -17,8 +17,6 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    color: white;
-    background: #000;
 }
 
 /* Паралакс єфект та стилізація слоїв для нього */
@@ -94,16 +92,13 @@ body {
 
 
 .navbar {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    color: white;
-
     z-index: 1;
 }
-  
+
 
 .navigation {
     height: 40px;
@@ -124,7 +119,8 @@ body {
 .navigation a {
     text-decoration: none;
     cursor: pointer;
-    color: white;
+
+    color: black;
 }
 
 
@@ -138,97 +134,98 @@ body {
     border-bottom: 1px gray solid;
 }
 
-/* ====================================================
-
-.NameCar {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px black;
-
-    font-size: 250px;
-}
-
-.Block {
-    position: absolute;
-
-    min-height: 100vh;
-    width: 300px;
-
-    left: 70vw;
-
-    background: yellow;
-
-    z-index: -3;
-}
-
-
-.backgroundText {
-    position: absolute;
-
-    width: 1200px;
-    text-align: center;
-    top: -15%;
-
-    z-index: -2;
-}
-
-.CommonImg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.nameInfo {
-    position: relative;
-
-    display: flex;
-    justify-content: space-around;
-
-    top: 85vh;
-}
-
-.SectionHeader,
-.SectionMain .SectionFooter {
-    min-height: 100vh;
-}
-
-
-.nameInfo h3,
-h5 {
-    margin: 0;
-}
-
-.nameInfo h5 {
-    color: #acacac;
-}
-
-.table,
-.tableName {
-    width: 300px;
-}
-
-.table thead td {
-    color: #acacac;
-}
-
-.table tbody td {
-    font-size: 25px;
-}
-
-.tableName tbody td {
-    color: #acacac;
-    font-size: 25px;
-}
-
-
-============================================ */
-
+/* =========================main========================== */
 
 .main {
     min-height: 100vh;
 }
 
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
+.shortNameBlack {
+    background: #000;
+    color: white;
+
+    text-align: center;
+
+    width: 100px;
+}
+
+.shortNameWhite {
+    background: #fff;
+    color: black;
+
+    text-align: center;
+
+    width: 100px;
+}
+
+/* firstBlockInMain */
+
+.mainAboutUsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* height: 400px; */
+}
+
+.mainTextForAuto {
+    font-size: 36px;
+}
+
+.addTextForAuto {
+    width: 570px;
+    font-size: 20px;
+
+    text-align: justify;
+}
+
+/* SecondBlockInMain */
+
+.secondImageBlock img {
+    width: 700px;
+}
+
+.secondImageBlock button {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+/* UpBlock */
+
+.upBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.firstTextBlock {
+    height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* DownBlock */
+
+.downBlock {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+/* ServesBlock */
+
+.servesBlockSearch, .servesBlockWheel, .servesBlockWrench, .servesBlockComputer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.imageServesBlock {
+    width: 50px;
+    height: 50px;
+}

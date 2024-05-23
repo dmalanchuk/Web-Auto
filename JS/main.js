@@ -7,5 +7,19 @@ document.addEventListener('mousemove', e => {
     })
 })
 
-// ================================================
+//sound effect 
+
+const audioMotor = document.querySelector('#motor')
+const buttonMotor = document.querySelector('#motorClick')
+
+buttonMotor.addEventListener('click', () => {
+    if (!audioMotor.paused) {
+        audioMotor.pause();
+        audioMotor.currentTime = 0.3;
+    }
+    audioMotor.play();
+})
+
+
+
 
