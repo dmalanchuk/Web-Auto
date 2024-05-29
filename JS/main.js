@@ -7,6 +7,12 @@ document.addEventListener('mousemove', e => {
     })
 })
 
+const scrollButton = document.querySelector("#buttonScroll")
+
+scrollButton.addEventListener('click', () => {
+
+})
+
 //sound effect 
 
 const audioMotor = document.querySelector('#motor')

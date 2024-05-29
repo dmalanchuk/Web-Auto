@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +20,6 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 
 /* Паралакс єфект та стилізація слоїв для нього */
@@ -35,6 +38,24 @@ body {
     will-change: transform;
     /*оптимізація*/
     transition: transform var(--transition);
+}
+
+.buttonStart {
+    background: transparent;
+    margin-top: 15px;
+
+    width: 100px;
+    height: 30px;
+
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.buttonStart a {
+    text-decoration: none;
+    color: #fff;
+
+    font-size: 16px;
 }
 
 .layers__items {
@@ -142,9 +163,6 @@ body {
 }
 
 #reviews {
-    background: #000;
-    color: #fff;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,15 +172,6 @@ body {
 .shortNameBlack {
     background: #000;
     color: white;
-
-    text-align: center;
-
-    width: 100px;
-}
-
-.shortNameWhite {
-    background: #fff;
-    color: black;
 
     text-align: center;
 
@@ -179,7 +188,7 @@ body {
     /* height: 400px; */
 }
 
-.mainTextForAuto {
+.mainTextForAuto, .mainTextForReviews {
     font-size: 36px;
 }
 
@@ -250,11 +259,37 @@ body {
 
 .reviewsTextContent {
     width: 400px;
-    height: 500px;
+    height: 350px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+}
+
+.shortDescriptionReviews a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.lastReviewsBlocks {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1200px;
+}
+
+.reviewsBlock {
+    width: 280px;
+    height: 150px;
+
+    text-align: left;
+
+    padding-top: 5px;
+    padding-left: 10px;
+
+    border-radius: 10px;
+    border: 2px solid black;
 }
