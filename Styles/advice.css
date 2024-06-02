@@ -1,0 +1,65 @@
+.sectionVisit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sectionVisit img {
+    width: 900px;
+}
+
+.textPartVisit {
+    width: 900px;
+}
+
+.imgPartVisit {
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+
+.sectionTechnical,
+.sectionCare,
+.sectionBelt,
+.sectionFuel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    min-height: 100vh;
+}
+
+/* =========================text========================= */
+
+.technical, .adviceForAuto {
+    font-size: 36px;
+
+    margin-top: 10px;
+}
+
+.descriptionTechnical, .textAdvice {
+    font-size: 28px;
+
+    margin-top: 15px;
+}
+
+/* ==========================end text======================== */
+
+
+
+.imagePart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagePart img {
+    width: 600px;
+
+    border-radius: 15px;
+}
