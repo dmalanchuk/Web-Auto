@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="stylesheet" href="../Styles/feedback.css">
+    <title>Відгуки</title>
+</head>
+
+<body>
+    <section id="upSection" class="SectionHeader">
+        <header class="headerHatchback">
+            <div class="container">
+                <nav class="navbar">
+                    <h3>webAuto</h3>
+                    <ul class="navigation">
+                        <li><button class="button"><a href="../index.html">Головна</a></button></li>
+                        <li><button class="button"><a href="./advice.html">Поради</a></button></li>
+                        <li><button class="button"><a href="./news.html">Новини</a></button></li>
+                        <li><button class="button"><a href="./repair.html">Сервіс та ремонт</a></button></li>
+                        <li><button class="button"><a href="./operation.html">Експлуатація</a></button></li>
+                        <li><button class="button"><a href="./feedback.html">Відгуки</a></button></li>
+                    </ul>
+                </nav>
+
+                <section class="sectionFeedback">
+
+                    <main class="mainFormFeedback">
+                        <div class="textPart">
+                            <h2>Залиши свій відгук</h2>
+                        </div>
+                        <div class="formPart">
+                            <form id="feedbackForm">
+                                <div class="nameFormPart">
+                                    <label for="name">Ім'я:</label>
+                                    <input type="text" id="name" placeholder="name" name="name" required><br><br>
+                                </div>
+                                <div class="numberFormPart">
+                                    <label for="rating">Рейтинг:</label>
+                                    <input type="number" id="rating" placeholder="rating from 1 to 5" name="rating" required><br><br>
+                                </div>
+                                <div class="descrFormPart">
+                                    <label for="description">Опис:</label>
+                                    <input id="description" name="description" placeholder="description" required><br><br>
+                                </div>
+                                <div class="submitFormPart">
+                                    <button type="submit">Відправити</button>
+                                </div>
+                            </form>
+                        </div>
+                    </main>
+
+                    <div class="feedbackFormList">
+                        <h2>Список Відгуків</h2>
+                        <div id="feedbackList"></div>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </header>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footerContent">
+                <div class="textFooter">
+                    <h3 class="info">Сайт створений 01.06.2024</h3>
+                </div>
+                <div class="buttonFooter">
+                    <button class="buttonUp"><a href="#upSection"><img src="../NewImg/up-arrow.png"
+                                alt="up-arrow"></a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/monitoring.js"></script>
+    <script src="../JS/feedback.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.sectionFeedback {
+    min-height: 100vh;
+}
+
+.feedbackFormList {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.feedbackFormList h2 {
+    text-align: center;
+
+    margin-top: 10px;
+}
+
+#feedbackList {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.feedback-container {
+    width: 300px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.feedback-container header {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feedback-container nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.feedback-container button {
+    background: transparent;
+
+    width: 80px;
+    height: 20px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.feedback-container main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-container footer {
+    margin-top: 20px;
+
+}
+
+.feedback-container div {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 180px;
+}
+
+/* =================================== */
+
+.mainFormFeedback {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nameFormPart,
+.numberFormPart,
+.descrFormPart {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.submitFormPart button {
+    background: transparent;
+
+    width: 100px;
+    height: 20px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nameFormPart input,
+.numberFormPart input,
+.descrFormPart input {
+    width: 200px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    padding: 5px;
+}

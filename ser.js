@@ -3,58 +3,64 @@ const puppeteer = require('puppeteer');
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('https://example.com');
+    const url = 'http://127.0.0.1:5500/index.html';
 
-    // Вимірювання часу завантаження сторінки
-    const loadTime = await page.evaluate(() => {
-        return window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
-    });
+    const startTime = new Date().getTime();
+    await page.goto(url);
+    const loadTime = new Date().getTime() - startTime;
 
-    // Вимірювання кількості запитів до сервера
-    const requests = await page.evaluate(() => {
-        return window.performance.getEntriesByType('resource').length;
-    });
+    console.log(`Час завантаження сторінки: ${loadTime} мс`);
 
-    // Збереження результатів
-    console.log('Час завантаження сторінки: ' + loadTime + ' мс');
-    console.log('Кількість запитів до сервера: ' + requests);
+    await browser.close();
+})();
+
+(async () => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    const url = 'http://127.0.0.1:5500/index.html';
+
+    // Початок тестування
+    console.log('Початок тестування після оптимізацій');
+
+    const startTime = new Date().getTime();
+    await page.goto(url);
+    const loadTime = new Date().getTime() - startTime;
+
+    console.log(`Час завантаження сторінки після оптимізацій: ${loadTime} мс`);
+
+    // Завершення тестування
+    console.log('Тестування завершено');
 
     await browser.close();
 })();
 
 
-async function runPerformanceTest() {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
+// async function runPerformanceTest(url) {
+//     const browser = await puppeteer.launch();
+//     const page = await browser.newPage();
 
-    try {
-        // Відкриваємо веб-сторінку
-        await page.goto('https://example.com', { waitUntil: 'load' });
+//     console.log(`Початок тесту продуктивності для ${url}`);
 
-        // Вимірюємо час завантаження сторінки
-        const loadTime = await page.evaluate(() => {
-            return window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
-        });
+//     const startTime = new Date().getTime();
+//     await page.goto(url);
+//     const loadTime = new Date().getTime() - startTime;
 
-        // Вимірюємо кількість запитів до сервера
-        const requests = await page.evaluate(() => {
-            return window.performance.getEntriesByType('resource').length;
-        });
+//     console.log(`Час завантаження сторінки: ${loadTime} мс`);
 
-        // Розмір сторінки
-        const pageSize = (await page.content()).length;
+//     await browser.close();
+// }
 
-        // Виводимо результати
-        console.log('Час завантаження сторінки: ' + loadTime + ' мс');
-        console.log('Кількість запитів до сервера: ' + requests);
-        console.log('Розмір сторінки: ' + pageSize + ' байт');
-    } catch (error) {
-        console.error('Сталася помилка під час виконання тесту:', error);
-    } finally {
-        // Закриваємо браузер
-        await browser.close();
-    }
-}
+// Функція для періодичного виконання тестів продуктивності
+// function performPeriodicTests(url, interval) {
+//     console.log(`Розпочато періодичне тестування продуктивності для ${url} з інтервалом ${interval} мс`);
 
-// Запускаємо тест
-runPerformanceTest();
+//     setInterval(async () => {
+//         await runPerformanceTest(url);
+//     }, interval);
+// }
+
+// // Запускаємо періодичні тести
+// const websiteUrl = 'http://127.0.0.1:5500/index.html'; 
+// const testInterval = 3600000; 
+
+// performPeriodicTests(websiteUrl, testInterval);
