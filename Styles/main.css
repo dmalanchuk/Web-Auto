@@ -319,3 +319,223 @@ body {
 .buttonUp img {
     width: 30px;
 }
+
+
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .navigation li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer .container {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar h3 {
+        font-size: 1.5em;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .footer .buttonUp a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .footer .container {
+        padding: 10px;
+    }
+}
+
+
+/* Styles for screen widths of 992px and below */
+@media (max-width: 992px) {
+    .header-main-text h1 {
+        font-size: 24px;
+    }
+
+    .header-main-text p {
+        font-size: 14px;
+    }
+
+    .buttonStart {
+        font-size: 14px;
+    }
+
+    .navbar h3 {
+        font-size: 18px;
+    }
+
+    .navigation .button a {
+        font-size: 14px;
+    }
+
+    .mainAboutUsBlock .firstTextBlock h4 {
+        font-size: 18px;
+    }
+
+    .mainAboutUsBlock .firstTextBlock h2 {
+        font-size: 22px;
+    }
+
+    .mainAboutUsBlock .firstTextBlock p {
+        font-size: 14px;
+    }
+
+    .servesBlockSearch h5, 
+    .servesBlockWheel h5, 
+    .servesBlockWrench h5, 
+    .servesBlockComputer h5 {
+        font-size: 16px;
+    }
+
+    .servesBlockSearch p, 
+    .servesBlockWheel p, 
+    .servesBlockWrench p, 
+    .servesBlockComputer p {
+        font-size: 12px;
+    }
+
+    .reviewsTextContent h2 {
+        font-size: 22px;
+    }
+
+    .reviewsTextContent p {
+        font-size: 14px;
+    }
+
+    .reviewsBlock h5 {
+        font-size: 14px;
+    }
+
+    .reviewsBlock p {
+        font-size: 12px;
+    }
+
+    /* Adjust image sizes */
+    .secondImageBlock img {
+        width: 80%;
+    }
+
+    .servesBlockSearch img, 
+    .servesBlockWheel img, 
+    .servesBlockWrench img, 
+    .servesBlockComputer img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reviewsBlock img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Styles for screen widths of 768px and below */
+@media (max-width: 768px) {
+    .header-main-text h1 {
+        font-size: 20px;
+    }
+
+    .header-main-text p {
+        font-size: 12px;
+    }
+
+    .buttonStart {
+        font-size: 12px;
+    }
+
+    .navbar h3 {
+        font-size: 16px;
+    }
+
+    .navigation .button a {
+        font-size: 12px;
+    }
+
+    .mainAboutUsBlock .firstTextBlock h4 {
+        font-size: 16px;
+    }
+
+    .mainAboutUsBlock .firstTextBlock h2 {
+        font-size: 18px;
+    }
+
+    .mainAboutUsBlock .firstTextBlock p {
+        font-size: 12px;
+    }
+
+    .servesBlockSearch h5, 
+    .servesBlockWheel h5, 
+    .servesBlockWrench h5, 
+    .servesBlockComputer h5 {
+        font-size: 14px;
+    }
+
+    .servesBlockSearch p, 
+    .servesBlockWheel p, 
+    .servesBlockWrench p, 
+    .servesBlockComputer p {
+        font-size: 10px;
+    }
+
+    .reviewsTextContent h2 {
+        font-size: 18px;
+    }
+
+    .reviewsTextContent p {
+        font-size: 12px;
+    }
+
+    .reviewsBlock h5 {
+        font-size: 12px;
+    }
+
+    .reviewsBlock p {
+        font-size: 10px;
+    }
+
+    /* Adjust image sizes */
+    .secondImageBlock img {
+        width: 70%;
+    }
+
+    .servesBlockSearch img, 
+    .servesBlockWheel img, 
+    .servesBlockWrench img, 
+    .servesBlockComputer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviewsBlock img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .layers__items.layer1,
+    .layers__items.layer2,
+    .layers__items.layer3,
+    .layers__items.layer5 {
+        background-size: cover;
+    }
+}

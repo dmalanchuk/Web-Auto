@@ -44,7 +44,7 @@ async function loadFeedback() {
               </footer>
               <div>
                     <button onclick="updateFeedback(${feedback.id})">Оновлення</button>
-                     <button onclick="deleteFeedback(${feedback.id})">Видалення</button>
+                    <button onclick="deleteFeedback(${feedback.id})">Видалення</button>
                 </div>
             </nav>
             </header>

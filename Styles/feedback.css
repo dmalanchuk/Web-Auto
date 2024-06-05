@@ -129,3 +129,23 @@
 
     padding: 5px;
 }
+
+@media (max-width: 768px) {
+    .mainFormFeedback {
+        flex-direction: column;
+    }
+
+    .mainFormFeedback .textPart,
+    .mainFormFeedback .formPart {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .formPart input {
+        width: 100%;
+    }
+
+    .feedbackFormList {
+        margin-top: 20px;
+    }
+}

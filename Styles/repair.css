@@ -39,3 +39,153 @@
     width: 800px;
     font-size: 24px;
 }
+
+
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h3 {
+        margin-bottom: 10px;
+        font-size: 1.5em; 
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation .button a {
+        font-size: 1em; 
+    }
+
+    .repairContent {
+        padding: 20px 0;
+    }
+
+    .sectionTechnicalRepair {
+        margin-bottom: 20px;
+    }
+
+    .technicalRepairContent {
+        flex-direction: column;
+    }
+
+    .imgRepairPart, .imgDiagPart {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .imgRepairPart img, .imgDiagPart img {
+        width: 80%; 
+        height: auto;
+    }
+
+    .textRepairPart {
+        width: 80%;
+        text-align: center;
+    }
+
+    .textRepairPart h2 {
+        font-size: 1.5em; 
+    }
+
+    .textRepairPart p {
+        font-size: 1em; 
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textFooter .info {
+        font-size: 1em;
+    }
+
+    .buttonFooter {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h3 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .navigation .button a {
+        font-size: 0.9em;
+    }
+
+    .repairContent {
+        padding: 15px 0;
+    }
+
+    .sectionTechnicalRepair {
+        margin-bottom: 15px;
+    }
+
+    .technicalRepairContent {
+        flex-direction: column;
+    }
+
+    .imgRepairPart, .imgDiagPart {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .imgRepairPart img, .imgDiagPart img {
+        width: 70%; 
+        height: auto;
+    }
+
+    .textRepairPart {
+        width: 80%;
+        text-align: center;
+    }
+
+    .textRepairPart h2 {
+        font-size: 1.3em; 
+    }
+
+    .textRepairPart p {
+        font-size: 0.9em; 
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textFooter .info {
+        font-size: 0.9em; 
+    }
+
+    .buttonFooter {
+        margin-top: 10px;
+    }
+}

@@ -13,7 +13,6 @@
 }
 
 .textPartVisit {
-    width: 900px;
 }
 
 .imgPartVisit {
@@ -62,4 +61,32 @@
     width: 600px;
 
     border-radius: 15px;
+}
+
+
+@media (max-width: 992px) {
+    .sectionVisit, .sectionTechnical, .sectionCare, .sectionFuel, .sectionBelt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionVisit .textPartVisit, .sectionTechnical .textPart, .sectionCare .textPart, .sectionFuel .textPart, .sectionBelt .textPart {
+        text-align: center;
+        align-items: center;
+    }
+
+    .sectionVisit img, .sectionTechnical img, .sectionCare img, .sectionFuel img, .sectionBelt img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionVisit .textPartVisit, .sectionTechnical .textPart, .sectionCare .textPart, .sectionFuel .textPart, .sectionBelt .textPart {
+        padding: 10px;
+    }
+
+    .sectionTechnical .imagePart img, .sectionCare .imagePart img, .sectionFuel .imagePart img, .sectionBelt .imagePart img {
+        flex: 1 1 80%;
+        margin: 0 0 10px 0;
+    }
 }
