@@ -1,191 +1,193 @@
 .sectionTechnicalRepair {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .technicalRepairContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .imgRepairPart img {
-    width: 800px;
+  width: 800px;
 
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .imgDiagPart img {
-    width: 900px;
+  width: 900px;
 
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .textRepairPart {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .textRepairPart h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .textRepairPart p {
-    margin-top: 20px;
+  margin-top: 20px;
 
-    width: 800px;
-    font-size: 24px;
+  width: 800px;
+  font-size: 24px;
 }
 
-
-
 @media (max-width: 992px) {
-    .container {
-        padding: 0 20px;
-    }
+  .container {
+    padding: 0 20px;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .navbar h3 {
-        margin-bottom: 10px;
-        font-size: 1.5em; 
-    }
+  .navbar h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
 
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .navigation .button a {
-        font-size: 1em; 
-    }
+  .navigation .button a {
+    font-size: 1em;
+  }
 
-    .repairContent {
-        padding: 20px 0;
-    }
+  .repairContent {
+    padding: 20px 0;
+  }
 
-    .sectionTechnicalRepair {
-        margin-bottom: 20px;
-    }
+  .sectionTechnicalRepair {
+    margin-bottom: 20px;
+  }
 
-    .technicalRepairContent {
-        flex-direction: column;
-    }
+  .technicalRepairContent {
+    flex-direction: column;
+  }
 
-    .imgRepairPart, .imgDiagPart {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+  .imgRepairPart,
+  .imgDiagPart {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 
-    .imgRepairPart img, .imgDiagPart img {
-        width: 80%; 
-        height: auto;
-    }
+  .imgRepairPart img,
+  .imgDiagPart img {
+    width: 80%;
+    height: auto;
+  }
 
-    .textRepairPart {
-        width: 80%;
-        text-align: center;
-    }
+  .textRepairPart {
+    width: 80%;
+    text-align: center;
+  }
 
-    .textRepairPart h2 {
-        font-size: 1.5em; 
-    }
+  .textRepairPart h2 {
+    font-size: 1.5em;
+  }
 
-    .textRepairPart p {
-        font-size: 1em; 
-    }
+  .textRepairPart p {
+    font-size: 1em;
+  }
 
-    .footerContent {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .textFooter .info {
-        font-size: 1em;
-    }
+  .textFooter .info {
+    font-size: 1em;
+  }
 
-    .buttonFooter {
-        margin-top: 10px;
-    }
+  .buttonFooter {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
+  .container {
+    padding: 0 15px;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .navbar h3 {
-        margin-bottom: 10px;
-        font-size: 1.2em;
-    }
+  .navbar h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
 
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-    .navigation .button a {
-        font-size: 0.9em;
-    }
+  .navigation .button a {
+    font-size: 0.9em;
+  }
 
-    .repairContent {
-        padding: 15px 0;
-    }
+  .repairContent {
+    padding: 15px 0;
+  }
 
-    .sectionTechnicalRepair {
-        margin-bottom: 15px;
-    }
+  .sectionTechnicalRepair {
+    margin-bottom: 15px;
+  }
 
-    .technicalRepairContent {
-        flex-direction: column;
-    }
+  .technicalRepairContent {
+    flex-direction: column;
+  }
 
-    .imgRepairPart, .imgDiagPart {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  .imgRepairPart,
+  .imgDiagPart {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 
-    .imgRepairPart img, .imgDiagPart img {
-        width: 70%; 
-        height: auto;
-    }
+  .imgRepairPart img,
+  .imgDiagPart img {
+    width: 70%;
+    height: auto;
+  }
 
-    .textRepairPart {
-        width: 80%;
-        text-align: center;
-    }
+  .textRepairPart {
+    width: 80%;
+    text-align: center;
+  }
 
-    .textRepairPart h2 {
-        font-size: 1.3em; 
-    }
+  .textRepairPart h2 {
+    font-size: 1.3em;
+  }
 
-    .textRepairPart p {
-        font-size: 0.9em; 
-    }
+  .textRepairPart p {
+    font-size: 0.9em;
+  }
 
-    .footerContent {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .textFooter .info {
-        font-size: 0.9em; 
-    }
+  .textFooter .info {
+    font-size: 0.9em;
+  }
 
-    .buttonFooter {
-        margin-top: 10px;
-    }
+  .buttonFooter {
+    margin-top: 10px;
+  }
 }
